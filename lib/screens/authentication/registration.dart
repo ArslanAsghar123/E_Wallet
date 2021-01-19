@@ -1,5 +1,6 @@
 import 'package:avatar_glow/avatar_glow.dart';
 import 'package:e_wallet/widgets/appbar.dart';
+import 'package:e_wallet/widgets/button.dart';
 import 'package:flutter/material.dart';
 
 class RegistrationScreen extends StatefulWidget {
@@ -90,7 +91,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.only(left: 30, right: 30),
+                  margin: EdgeInsets.only(left: 30, right: 30,),
                   padding: EdgeInsets.only(left: 16, right: 16, top: 25),
                   height: 240,
                   decoration: BoxDecoration(
@@ -111,6 +112,24 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                                 borderSide: BorderSide(
                                     color: Color(0xFFC0C0C0), width: 32.0),
                                 borderRadius: BorderRadius.circular(12.0))),
+                      ),
+                      SizedBox(height: 15,),
+                      TextField(
+                        decoration: InputDecoration(
+                            prefixIcon: Icon(Icons.mail_outline_outlined,color: Color(0xFF929292)),
+                            labelText: 'Enter you mail',
+                            labelStyle: TextStyle(
+                                fontSize: 15,
+                                fontFamily: 'Metropolis',
+                                fontWeight: FontWeight.w500),
+                            border: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                    color: Color(0xFFC0C0C0), width: 32.0),
+                                borderRadius: BorderRadius.circular(12.0))),
+                      ),
+                      SizedBox(height: 15,),
+                      GestureDetector(
+                        child: redButton(context, 'Continue'),
                       )
                     ],
                   ),
