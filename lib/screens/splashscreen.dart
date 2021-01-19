@@ -10,12 +10,20 @@ class SplashScreen1 extends StatefulWidget {
 }
 
 class _SplashScreen1State extends State<SplashScreen1> {
-
   @override
   void initState() {
-    Timer(Duration(seconds: 3), () => Navigator.push(context, MaterialPageRoute(builder: (context)=> GetStartedScreen())));
+    Timer(
+        Duration(seconds: 5),
+        () => Navigator.push(context,
+            MaterialPageRoute(builder: (context) => GetStartedScreen())));
     super.initState();
   }
+
+  @override
+  void dispose() {
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,13 +31,17 @@ class _SplashScreen1State extends State<SplashScreen1> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          Image.asset('images/qismaticon.png'),
+          Image.asset(
+            'assets/images/makuta.png',
+            height: 120,
+          ),
           SizedBox(height: 20),
-          SpinKitRipple(color: Colors.redAccent,size: 50,)
-
+          SpinKitRipple(
+            color: Colors.redAccent,
+            size: 50,
+          )
         ],
       ),
-
     );
   }
 }
