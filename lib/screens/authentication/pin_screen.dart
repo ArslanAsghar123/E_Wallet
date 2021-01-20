@@ -1,17 +1,16 @@
 import 'package:avatar_glow/avatar_glow.dart';
-import 'package:e_wallet/screens/authentication/verification.dart';
+import 'package:e_wallet/screens/authentication/login.dart';
 import 'package:e_wallet/widgets/appbar.dart';
 import 'package:e_wallet/widgets/reuseableTexts.dart';
 import 'package:e_wallet/widgets/reuseable_container.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class RegistrationScreen extends StatefulWidget {
+class PinScreen extends StatefulWidget {
   @override
-  _RegistrationScreenState createState() => _RegistrationScreenState();
+  _PinScreenState createState() => _PinScreenState();
 }
 
-class _RegistrationScreenState extends State<RegistrationScreen> {
+class _PinScreenState extends State<PinScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -52,7 +51,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                       child: CircleAvatar(
                         backgroundColor: Colors.grey[200],
                         child: Image.asset(
-                          'assets/images/registration.png',
+                          'assets/images/pin.png',
                           height: 200,
                           alignment: Alignment.center,
                         ),
@@ -61,21 +60,19 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     )),
                 Expanded(
                   child: ReuseableText(
-                    boldLable: 'Registration',
-                    lable1: 'Lorem ipsum dolor sit amet, consetetur',
-                    lable2: 'sadipscing elitr, sed diam nonumy eirmod ',
+                    boldLable: 'PIN',
+                    lable1: 'Enter 4 digit pin code',
+                    lable2: ' elitr, sed diam nonumy eirmod ',
                   ),
                 ),
                 ReuseableContainer(
-                  lableTextfield1: '+92 (302) xxxxxxx',
-                  lableTextfield2: 'Enter your email (optional)',
-                  iconPrefix1: (Icons.flag),
-                  iconPrefix2: (Icons.mail_outline_outlined),
+                  lableTextfield1: 'Enter Pin',
+                  lableTextfield2: 'Confirm Pin',
+                  iconPrefix1: (Icons.vpn_key_outlined),
+                  iconPrefix2: (Icons.vpn_key_outlined),
                   onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => OTPVerification()));
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => LogInScreen()));
                   },
                 ),
                 SizedBox(
