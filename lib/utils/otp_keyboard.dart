@@ -37,10 +37,10 @@ class OTPDigitTextFieldBox extends StatelessWidget {
             ),
             // contentPadding: EdgeInsets.all(0),
             counter: Offstage(),
-            enabledBorder: OutlineInputBorder(
-                borderSide: BorderSide(width: 2, color: Colors.transparent),
+            enabledBorder: UnderlineInputBorder(
+                borderSide: BorderSide(width: 2, color: Colors.grey),
                 ),
-            focusedBorder: OutlineInputBorder(
+            focusedBorder: UnderlineInputBorder(
                 borderSide: BorderSide(width: 2, color: AppColors.textColor),
                 ),
 
