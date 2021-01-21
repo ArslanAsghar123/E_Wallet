@@ -1,12 +1,17 @@
+import 'dart:async';
+
 import 'package:avatar_glow/avatar_glow.dart';
 import 'package:e_wallet/screens/authentication/pin_screen.dart';
 import 'package:e_wallet/utils/colors.dart';
+import 'package:e_wallet/utils/my_icons.dart';
+import 'package:e_wallet/utils/my_images.dart';
 import 'package:e_wallet/utils/otp_keyboard.dart';
 import 'package:e_wallet/widgets/appbar.dart';
 import 'package:e_wallet/widgets/button.dart';
 import 'package:e_wallet/widgets/reuseableTexts.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class OTPVerification extends StatefulWidget {
   @override
@@ -14,9 +19,45 @@ class OTPVerification extends StatefulWidget {
 }
 
 class _OTPVerificationState extends State<OTPVerification> {
+  Timer _timer;
+  int _start = 30;
+
+  void startTimer() {
+    const oneSec = Duration(seconds: 1);
+    _timer = new Timer.periodic(
+      oneSec,
+      (Timer timer) {
+        if (_start == 0) {
+          if (!mounted) return;
+          setState(() {
+            timer.cancel();
+          });
+        } else {
+          if (!mounted) return;
+          setState(() {
+            _start--;
+          });
+        }
+      },
+    );
+  }
+
+  @override
+  void initState() {
+    startTimer();
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _timer.cancel();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        resizeToAvoidBottomInset: false,
         resizeToAvoidBottomPadding: false,
         appBar: AppBar(
           title: appBar(
@@ -26,10 +67,10 @@ class _OTPVerificationState extends State<OTPVerification> {
           backgroundColor: Color(0xFFF7F6FB),
           elevation: 0.0,
           leading: IconButton(
-            icon: Icon(
-              Icons.arrow_back_ios_rounded,
+            icon:  SvgPicture.asset(
+              pathIcon,
               color: Colors.black,
-              size: 25,
+              height: 20,
             ),
             onPressed: () => Navigator.of(context).pop(),
           ),
@@ -54,8 +95,8 @@ class _OTPVerificationState extends State<OTPVerification> {
                           shape: CircleBorder(),
                           child: CircleAvatar(
                             backgroundColor: Colors.grey[200],
-                            child: Image.asset(
-                              'assets/images/verification.png',
+                            child: SvgPicture.asset(
+                              verificationImage,
                               height: 200,
                               alignment: Alignment.center,
                             ),
@@ -89,32 +130,39 @@ class _OTPVerificationState extends State<OTPVerification> {
                               ]),
                           child: Column(
                             children: [
-                              SizedBox(height: 20,),
-
-
+                              SizedBox(
+                                height: 20,
+                              ),
                               Container(
                                 padding: EdgeInsets.symmetric(horizontal: 2),
-                                child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-                                  Row(
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
-                                      OTPDigitTextFieldBox(first: true, last: false),
-                                      OTPDigitTextFieldBox(first: false, last: false),
-                                      OTPDigitTextFieldBox(first: false, last: false),
-                                      OTPDigitTextFieldBox(first: false, last: false),
-                                      OTPDigitTextFieldBox(first: false, last: false),
-                                      OTPDigitTextFieldBox(first: false, last: true),
-                                    ],
-                                  )
-                                ]),
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          OTPDigitTextFieldBox(
+                                              first: true, last: false),
+                                          OTPDigitTextFieldBox(
+                                              first: false, last: false),
+                                          OTPDigitTextFieldBox(
+                                              first: false, last: false),
+                                          OTPDigitTextFieldBox(
+                                              first: false, last: true),
+                                        ],
+                                      )
+                                    ]),
                               ),
-                              SizedBox(height: 12,),
+                              SizedBox(
+                                height: 12,
+                              ),
                               GestureDetector(
                                 onTap: () {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) =>PinScreen()));
+                                          builder: (context) => PinScreen()));
                                 },
                                 child: Column(
                                   children: [
@@ -128,14 +176,17 @@ class _OTPVerificationState extends State<OTPVerification> {
                         Container(
                             transform:
                                 Matrix4.translationValues(0.0, -120.0, 0.0),
-                            child: Text(
-                              'Resend code in 30 sec',
+                            child:
+
+                            Text(
+                              'Resend code in ${_start} sec',
                               style: TextStyle(
                                   color: AppColors.textColor,
                                   fontFamily: 'Metropolis',
                                   fontWeight: FontWeight.w700,
                                   fontSize: 12),
-                            ))
+                            )
+                        )
                       ],
                     ),
                   ],

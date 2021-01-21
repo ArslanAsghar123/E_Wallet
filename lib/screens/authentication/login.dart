@@ -1,9 +1,14 @@
 import 'package:avatar_glow/avatar_glow.dart';
+import 'package:e_wallet/screens/authentication/forget_pin.dart';
+import 'package:e_wallet/screens/home/homescreen.dart';
 import 'package:e_wallet/utils/colors.dart';
+import 'package:e_wallet/utils/my_icons.dart';
+import 'package:e_wallet/utils/my_images.dart';
 import 'package:e_wallet/widgets/appbar.dart';
 import 'package:e_wallet/widgets/reuseableTexts.dart';
 import 'package:e_wallet/widgets/reuseable_container.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class LogInScreen extends StatefulWidget {
   @override
@@ -23,10 +28,10 @@ class _LogInScreenState extends State<LogInScreen> {
         backgroundColor: Color(0xFFF7F6FB),
         elevation: 0.0,
         leading: IconButton(
-          icon: Icon(
-            Icons.arrow_back_ios_rounded,
+          icon: SvgPicture.asset(
+            pathIcon,
             color: Colors.black,
-            size: 25,
+            height: 20,
           ),
           onPressed: () => Navigator.of(context).pop(),
         ),
@@ -50,8 +55,8 @@ class _LogInScreenState extends State<LogInScreen> {
                       shape: CircleBorder(),
                       child: CircleAvatar(
                         backgroundColor: Colors.grey[200],
-                        child: Image.asset(
-                          'assets/images/login.png',
+                        child: SvgPicture.asset(
+                          loginImage,
                           height: 200,
                           alignment: Alignment.center,
                         ),
@@ -70,20 +75,31 @@ class _LogInScreenState extends State<LogInScreen> {
                   lableTextfield2: 'Enter your PIN',
                   iconPrefix1: (Icons.phone_android_sharp),
                   iconPrefix2: (Icons.vpn_key_outlined),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => HomeScreen()));
+                  },
                 ),
                 SizedBox(
                   height: 45,
                 ),
                 Container(
                     transform: Matrix4.translationValues(0.0, -30.0, 0.0),
-                    child: Text(
-                      'Forget PIN?',
-                      style: TextStyle(
-                          color: AppColors.textColor,
-                          fontFamily: 'Metropolis',
-                          fontWeight: FontWeight.w700,
-                          fontSize: 12),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => ForgetPin()));
+                      },
+                      child: Text(
+                        'Forget PIN?',
+                        style: TextStyle(
+                            color: AppColors.textColor,
+                            fontFamily: 'Metropolis',
+                            fontWeight: FontWeight.w700,
+                            fontSize: 12),
+                      ),
                     ))
               ],
             ),

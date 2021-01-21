@@ -1,10 +1,16 @@
+import 'dart:async';
+
 import 'package:avatar_glow/avatar_glow.dart';
 import 'package:e_wallet/screens/authentication/verification.dart';
+import 'package:e_wallet/utils/my_icons.dart';
+import 'package:e_wallet/utils/my_images.dart';
 import 'package:e_wallet/widgets/appbar.dart';
 import 'package:e_wallet/widgets/reuseableTexts.dart';
 import 'package:e_wallet/widgets/reuseable_container.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:e_wallet/utils/my_icons.dart';
 
 class RegistrationScreen extends StatefulWidget {
   @override
@@ -24,10 +30,10 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
         backgroundColor: Color(0xFFF7F6FB),
         elevation: 0.0,
         leading: IconButton(
-          icon: Icon(
-            Icons.arrow_back_ios_rounded,
+          icon: SvgPicture.asset(
+            pathIcon,
             color: Colors.black,
-            size: 25,
+            height: 20,
           ),
           onPressed: () => Navigator.of(context).pop(),
         ),
@@ -51,8 +57,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                       shape: CircleBorder(),
                       child: CircleAvatar(
                         backgroundColor: Colors.grey[200],
-                        child: Image.asset(
-                          'assets/images/registration.png',
+                        child: SvgPicture.asset(
+                          registerImage,
                           height: 200,
                           alignment: Alignment.center,
                         ),
@@ -69,7 +75,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 ReuseableContainer(
                   lableTextfield1: '+92 (302) xxxxxxx',
                   lableTextfield2: 'Enter your email (optional)',
-                  iconPrefix1: (Icons.flag),
+                  iconPrefix1: (Icons.flag_outlined),
                   iconPrefix2: (Icons.mail_outline_outlined),
                   onPressed: () {
                     Navigator.push(

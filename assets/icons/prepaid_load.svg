@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_506" data-name="Rectangle 506" width="20" height="20" transform="translate(89 479)" fill="#929292" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_41" data-name="Mask Group 41" transform="translate(-89 -479)" clip-path="url(#clip-path)">
+    <g id="mobile" transform="translate(91.64 480.198)">
+      <path id="Path_412" data-name="Path 412" d="M17.3,1.125H8.2A1.175,1.175,0,0,0,7.031,2.3V17.555A1.175,1.175,0,0,0,8.2,18.728h9.1a1.175,1.175,0,0,0,1.174-1.174V2.3A1.175,1.175,0,0,0,17.3,1.125Zm0,1.174V3.472H8.2V2.3Zm0,2.347V12.86H8.2V4.646Zm0,12.909H8.2V14.034h9.1v3.521Z" transform="translate(-7.031 -1.125)" fill="#929292"/>
+      <path id="Path_413" data-name="Path 413" d="M16.875,28.125h1.174V29.3H16.875Z" transform="translate(-11.741 -14.043)" fill="#929292"/>
+      <g id="Ellipse_33" data-name="Ellipse 33" transform="translate(6.721 5.801)" fill="#fff" stroke="#929292" stroke-width="1">
+        <circle cx="4" cy="4" r="4" stroke="none"/>
+        <circle cx="4" cy="4" r="3.5" fill="none"/>
+      </g>
+      <text id="RS" transform="translate(10.721 10.801)" fill="#929292" font-size="3" font-family="SegoeUI, Segoe UI"><tspan x="-1.694" y="0">RS</tspan></text>
+    </g>
+  </g>
+</svg>

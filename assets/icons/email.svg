@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" viewBox="0 0 26 26">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_493" data-name="Rectangle 493" width="26" height="26" transform="translate(1891 1093)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="eamil" transform="translate(-1891 -1093)" clip-path="url(#clip-path)">
+    <path id="email" d="M23.108,6.75H3.854a1.6,1.6,0,0,0-1.6,1.6V21.19a1.6,1.6,0,0,0,1.6,1.6H23.108a1.6,1.6,0,0,0,1.6-1.6V8.354A1.6,1.6,0,0,0,23.108,6.75Zm-1.765,1.6-7.862,5.439L5.619,8.354ZM3.854,21.19V9.085l9.17,6.346a.8.8,0,0,0,.914,0l9.17-6.346V21.19Z" transform="translate(1889.519 1091.228)" fill="#929292"/>
+  </g>
+</svg>

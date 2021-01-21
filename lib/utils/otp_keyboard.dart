@@ -4,9 +4,8 @@ import 'package:flutter/material.dart';
 class OTPDigitTextFieldBox extends StatelessWidget {
   final bool first;
   final bool last;
-  const OTPDigitTextFieldBox(
-      {Key key, @required this.first, @required this.last})
-      : super(key: key);
+
+  const OTPDigitTextFieldBox({@required this.first, @required this.last});
 
   @override
   Widget build(BuildContext context) {
@@ -27,25 +26,19 @@ class OTPDigitTextFieldBox extends StatelessWidget {
           showCursor: false,
           readOnly: false,
           textAlign: TextAlign.center,
-
           keyboardType: TextInputType.number,
           maxLength: 1,
           decoration: InputDecoration(
             hintText: "*",
-            hintStyle: TextStyle(
-
-            ),
+            hintStyle: TextStyle(),
             // contentPadding: EdgeInsets.all(0),
             counter: Offstage(),
             enabledBorder: UnderlineInputBorder(
-                borderSide: BorderSide(width: 2, color: Colors.grey),
-                ),
+              borderSide: BorderSide(width: 2, color: Colors.grey),
+            ),
             focusedBorder: UnderlineInputBorder(
-                borderSide: BorderSide(width: 2, color: AppColors.textColor),
-                ),
-
-
-
+              borderSide: BorderSide(width: 2, color: AppColors.textColor),
+            ),
           ),
         ),
       ),

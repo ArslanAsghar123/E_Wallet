@@ -1,6 +1,8 @@
 import 'package:e_wallet/screens/authentication/registration.dart';
 import 'package:e_wallet/widgets/button.dart';
 import 'package:flutter/material.dart';
+import 'package:e_wallet/utils/my_images.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class GetStartedScreen extends StatefulWidget {
   @override
@@ -11,6 +13,7 @@ class _GetStartedScreenState extends State<GetStartedScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xFFF7F6FB),
       body: Center(
         child: Container(
           color:  Color(0xFFF7F6FB),
@@ -19,7 +22,7 @@ class _GetStartedScreenState extends State<GetStartedScreen> {
               Expanded(
                   child: Container(
                       child:
-                          Image.asset('assets/images/register_page_screen.png'))),
+                      SvgPicture.asset(getStartImage))),
               Expanded(
                 child: Column(
                   children: [

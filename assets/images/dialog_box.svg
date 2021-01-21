@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="372" height="331.259" viewBox="0 0 372 331.259">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="338" height="162" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_399" data-name="Group 399" transform="translate(-20 -289.287)">
+    <g id="Group_397" data-name="Group 397" transform="translate(20 574.2)">
+      <path id="Path_407" data-name="Path 407" d="M597.838,238.331a5.849,5.849,0,1,0-11.7,0h-4.93a5.849,5.849,0,0,0-11.7,0h-4.93a5.848,5.848,0,1,0-11.7,0h-4.931a5.848,5.848,0,1,0-11.7,0h-4.93a5.849,5.849,0,0,0-11.7,0H514.7a5.849,5.849,0,0,0-11.7,0h-4.93a5.848,5.848,0,1,0-11.7,0h-4.931a5.848,5.848,0,1,0-11.7,0h-4.931a5.848,5.848,0,1,0-11.7,0H448.2a5.849,5.849,0,0,0-11.7,0h-4.929a5.849,5.849,0,0,0-11.7,0H414.94a5.848,5.848,0,1,0-11.7,0h-4.931a5.848,5.848,0,1,0-11.7,0h-4.93a5.849,5.849,0,0,0-11.7,0H365.06a5.849,5.849,0,0,0-11.7,0h-4.93a5.849,5.849,0,0,0-11.7,0H331.8a5.848,5.848,0,1,0-11.7,0h-4.931a5.848,5.848,0,1,0-11.7,0h-4.929a5.849,5.849,0,0,0-11.7,0h-4.929a5.849,5.849,0,0,0-11.7,0H265.3a5.849,5.849,0,0,0-11.7,0h-4.93a5.848,5.848,0,1,0-11.7,0h-5.569V192h372v46.331Z" transform="translate(-231.405 -191.985)" fill="#ff7d7d"/>
+      <line id="Line_18" data-name="Line 18" x2="367" transform="translate(2.5 0)" fill="none" stroke="#fff" stroke-width="1.5" stroke-dasharray="3"/>
+    </g>
+    <g id="Group_389" data-name="Group 389" transform="translate(0 27.133)">
+      <path id="Path_408" data-name="Path 408" d="M0,0H372V240H0Z" transform="translate(20 307)" fill="#f3f3f3"/>
+      <g id="Group_388" data-name="Group 388" transform="translate(0 3.682)">
+        <text id="Money_Transfer" data-name="Money Transfer" transform="translate(206 335.318)" fill="#272727" font-size="15" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-55.067" y="0">Money Transfer</tspan></text>
+        <g id="Group_386" data-name="Group 386" transform="translate(0 -1)">
+          <g id="Repeat_Grid_5" data-name="Repeat Grid 5" transform="translate(37 362.318)" clip-path="url(#clip-path)">
+            <g id="Group_384" data-name="Group 384" transform="translate(-37 -362.318)">
+              <g id="Group_377" data-name="Group 377" transform="translate(-29 21)">
+                <text id="Transferred_Amount" data-name="Transferred Amount" transform="translate(66 351.318)" fill="#575757" font-size="13" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transferred Amount</tspan></text>
+                <text id="USD_1.2" data-name="USD 1.2" transform="translate(66 371.318)" fill="#272727" font-size="13" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">USD 1.2</tspan></text>
+              </g>
+              <g id="Group_395" data-name="Group 395" transform="translate(182 21)">
+                <text id="Fee" transform="translate(193 351.318)" fill="#575757" font-size="13" font-family="SegoeUI, Segoe UI"><tspan x="-19.944" y="0">Fee</tspan></text>
+                <text id="USD_0.00" data-name="USD 0.00" transform="translate(193 371.318)" fill="#272727" font-size="13" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-55.815" y="0">USD 0.00</tspan></text>
+              </g>
+            </g>
+            <g id="Group_384-2" data-name="Group 384" transform="translate(-37 -299.318)">
+              <g id="Group_377-2" data-name="Group 377" transform="translate(-29 21)">
+                <text id="Receiver_Name" data-name="Receiver Name" transform="translate(66 351.318)" fill="#575757" font-size="13" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Receiver Name</tspan></text>
+                <text id="Martha_Ford" data-name="Martha Ford" transform="translate(66 371.318)" fill="#272727" font-size="13" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Martha Ford</tspan></text>
+              </g>
+              <g id="Group_395-2" data-name="Group 395" transform="translate(182 21)">
+                <text id="Receiver_Mobile_Number" data-name="Receiver Mobile Number" transform="translate(193 351.318)" fill="#575757" font-size="13" font-family="SegoeUI, Segoe UI"><tspan x="-142.08" y="0">Receiver Mobile Number</tspan></text>
+                <text id="_1_604_12456" data-name="+1 (604) 12456" transform="translate(193 371.318)" fill="#272727" font-size="13" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-93.26" y="0">+1 (604) 12456</tspan></text>
+              </g>
+            </g>
+            <g id="Group_384-3" data-name="Group 384" transform="translate(-37 -236.318)">
+              <g id="Group_377-3" data-name="Group 377" transform="translate(-29 21)">
+                <text id="Transaction_Date" data-name="Transaction Date" transform="translate(66 351.318)" fill="#575757" font-size="13" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Transaction Date</tspan></text>
+                <text id="_09_Jan_2021" data-name="09 Jan, 2021" transform="translate(66 371.318)" fill="#272727" font-size="13" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">09 Jan, 2021</tspan></text>
+              </g>
+              <g id="Group_395-3" data-name="Group 395" transform="translate(182 21)">
+                <text id="Transaction_Time" data-name="Transaction Time" transform="translate(193 351.318)" fill="#575757" font-size="13" font-family="SegoeUI, Segoe UI"><tspan x="-96.351" y="0">Transaction Time</tspan></text>
+                <text id="_10:32_am" data-name="10:32 am" transform="translate(193 371.318)" fill="#272727" font-size="13" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-55.923" y="0">10:32 am</tspan></text>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Group_396" data-name="Group 396">
+      <path id="Path_407-2" data-name="Path 407" d="M597.838,192a5.849,5.849,0,1,1-11.7,0h-4.93a5.849,5.849,0,0,1-11.7,0h-4.93a5.848,5.848,0,1,1-11.7,0h-4.931a5.848,5.848,0,1,1-11.7,0h-4.93a5.849,5.849,0,0,1-11.7,0H514.7a5.849,5.849,0,0,1-11.7,0h-4.93a5.848,5.848,0,1,1-11.7,0h-4.931a5.848,5.848,0,1,1-11.7,0h-4.931a5.848,5.848,0,1,1-11.7,0H448.2a5.849,5.849,0,0,1-11.7,0h-4.929a5.849,5.849,0,0,1-11.7,0H414.94a5.848,5.848,0,1,1-11.7,0h-4.931a5.848,5.848,0,1,1-11.7,0h-4.93a5.849,5.849,0,0,1-11.7,0H365.06a5.849,5.849,0,0,1-11.7,0h-4.93a5.849,5.849,0,0,1-11.7,0H331.8a5.848,5.848,0,1,1-11.7,0h-4.931a5.848,5.848,0,1,1-11.7,0h-4.929a5.849,5.849,0,0,1-11.7,0h-4.929a5.849,5.849,0,0,1-11.7,0H265.3a5.849,5.849,0,0,1-11.7,0h-4.93a5.848,5.848,0,1,1-11.7,0h-5.569v46.331h372V192Z" transform="translate(-211.405 97.287)" fill="#ff7d7d"/>
+      <path id="Path_409" data-name="Path 409" d="M0,0H367" transform="translate(22.5 335.633)" fill="none" stroke="#fff" stroke-width="1.5" stroke-dasharray="3"/>
+    </g>
+    <text id="TID_125466" data-name="TID #125466" transform="translate(206 321.451)" fill="#fff" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-53.635" y="0">TID #125466</tspan></text>
+    <g id="Group_398" data-name="Group 398" transform="translate(0 1.585)">
+      <text id="Share" transform="translate(294 598.788)" fill="#fff" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-45.008" y="0">SHARE</tspan></text>
+      <text id="Save" transform="translate(362.958 598.788)" fill="#fff" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-33.708" y="0">SAVE</tspan></text>
+    </g>
+  </g>
+</svg>
