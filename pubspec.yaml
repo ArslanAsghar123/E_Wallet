@@ -30,6 +30,8 @@ dependencies:
   get: ^3.24.0
   fancy_bottom_navigation: ^0.3.2
   google_fonts: ^1.1.1
+  font_awesome_flutter: ^8.11.0
+
 
 
 
@@ -84,6 +86,14 @@ flutter:
         - asset: assets/fonts/Metropolis-Medium.otf
         - asset: assets/fonts/Metropolis-Regular.otf
         - asset: assets/fonts/Metropolis-Thin.otf
+
+
+    - family: Metropolis
+      fonts:
+        - asset: assets/icons/custom_icon/MyCustomIcons.ttf
+
+
+
 
 
 

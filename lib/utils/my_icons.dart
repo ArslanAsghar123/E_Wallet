@@ -19,3 +19,7 @@ const homeIcon = 'assets/icons/bottom_navigation_bar_icons/home.svg';
 const bellIcon = 'assets/icons/bottom_navigation_bar_icons/bell.svg';
 const helpCircleIcon = 'assets/icons/bottom_navigation_bar_icons/help-circled.svg';
 const codeQRIcon = 'assets/icons/bottom_navigation_bar_icons/QR.svg';
+const sideDrawerIcon = 'assets/icons/sidedrawer.svg';
+
+
+
