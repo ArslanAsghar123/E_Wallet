@@ -1,5 +1,6 @@
 import 'package:avatar_glow/avatar_glow.dart';
 import 'package:e_wallet/screens/authentication/forget_pin.dart';
+import 'package:e_wallet/screens/home/home.dart';
 import 'package:e_wallet/screens/home/homescreen.dart';
 import 'package:e_wallet/utils/colors.dart';
 import 'package:e_wallet/utils/my_icons.dart';
@@ -77,7 +78,7 @@ class _LogInScreenState extends State<LogInScreen> {
                   iconPrefix2: (Icons.vpn_key_outlined),
                   onPressed: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => HomeScreen()));
+                        MaterialPageRoute(builder: (context) => Home()));
                   },
                 ),
                 SizedBox(

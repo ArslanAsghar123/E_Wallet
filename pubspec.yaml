@@ -31,6 +31,7 @@ dependencies:
   fancy_bottom_navigation: ^0.3.2
   google_fonts: ^1.1.1
   font_awesome_flutter: ^8.11.0
+  image_picker: ^0.6.7+21
 
 
 
@@ -64,6 +65,7 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
+
 
 
 
