@@ -32,6 +32,8 @@ dependencies:
   google_fonts: ^1.1.1
   font_awesome_flutter: ^8.11.0
   image_picker: ^0.6.7+21
+  clipboard: ^0.1.2+8
+
 
 
 

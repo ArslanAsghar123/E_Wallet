@@ -21,10 +21,8 @@ class SingleFieldContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(
-
         left: 30,
         right: 30,
-
       ),
       padding: EdgeInsets.only(left: 16, right: 16, top: 25),
       height: 260,

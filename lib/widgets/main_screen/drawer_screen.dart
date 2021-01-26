@@ -1,7 +1,9 @@
 import 'package:e_wallet/screens/authentication/login.dart';
+import 'package:e_wallet/screens/drawer_screens/add_money.dart';
 import 'package:e_wallet/screens/drawer_screens/change_pin.dart';
 import 'package:e_wallet/screens/drawer_screens/invite_friend.dart';
 import 'package:e_wallet/screens/drawer_screens/my_profile.dart';
+import 'package:e_wallet/screens/drawer_screens/transaction.dart';
 import 'package:e_wallet/utils/my_icons.dart';
 import 'package:e_wallet/widgets/app_route.dart';
 import 'package:e_wallet/widgets/app_route_replacement.dart';
@@ -128,7 +130,9 @@ class _DrawerScreenState extends State<DrawerScreen> {
                               fontFamily: 'Metropolis',
                               fontSize: 13),
                         ),
-                        onTap: () {},
+                        onTap: () {
+                          RouteApp.instance.pushPage(context, ExpansionTileScreen());
+                        },
                       ),
                       Divider(
                         height: 1,
@@ -146,7 +150,7 @@ class _DrawerScreenState extends State<DrawerScreen> {
                               fontFamily: 'Metropolis',
                               fontSize: 13),
                         ),
-                        onTap: () {},
+                        onTap: () {RouteApp.instance.pushPage(context, AddMoneyScreen());},
                       ),
                       Divider(
                         height: 1,
