@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
 class ReuseableTextfield extends StatelessWidget {
-  ReuseableTextfield({this.iconPrefix, this.iconSuffix, @required this.lable});
+  ReuseableTextfield({this.iconPrefix, this.iconSuffix, @required this.lable,this.enabled});
 
   final IconData iconPrefix;
   final IconData iconSuffix;
   final String lable;
+  bool enabled = true;
 
   @override
   Widget build(BuildContext context) {

@@ -56,6 +56,7 @@ class _InviteFriendState extends State<InviteFriend> {
                       lable2: ' elitr, sed diam nonumy eirmod ',
                     ),
                   ),
+
                   GestureDetector(
                     onTap: () {},
                     child: Container(
@@ -68,9 +69,8 @@ class _InviteFriendState extends State<InviteFriend> {
                       ),
                     ),
                   ),
-                  SizedBox(
-                    height: 15,
-                  ),
+
+
                   Expanded(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
