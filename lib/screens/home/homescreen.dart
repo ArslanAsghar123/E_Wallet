@@ -4,15 +4,12 @@ import 'package:e_wallet/screens/bank/transfer_money.dart';
 import 'package:e_wallet/screens/drawer_screens/invite_friend.dart';
 import 'package:e_wallet/screens/home/grid_view_Screen.dart';
 import 'package:e_wallet/screens/mobile/mobile_topup.dart';
-import 'package:e_wallet/utils/my_icons.dart';
-import 'package:e_wallet/utils/my_images.dart';
 import 'package:e_wallet/utils/widget_properties.dart';
 import 'package:e_wallet/widgets/app_route.dart';
 import 'package:e_wallet/widgets/app_route_replacement.dart';
 import 'package:e_wallet/widgets/main_screen/divider_draw_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class HomeScreen extends StatefulWidget {
   @override

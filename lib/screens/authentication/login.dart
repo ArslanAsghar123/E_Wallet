@@ -1,7 +1,6 @@
 import 'package:avatar_glow/avatar_glow.dart';
 import 'package:e_wallet/screens/authentication/forget_pin.dart';
 import 'package:e_wallet/screens/home/home.dart';
-import 'package:e_wallet/screens/home/homescreen.dart';
 import 'package:e_wallet/utils/colors.dart';
 import 'package:e_wallet/utils/my_icons.dart';
 import 'package:e_wallet/utils/my_images.dart';

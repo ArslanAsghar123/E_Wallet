@@ -1,6 +1,5 @@
 import 'package:e_wallet/screens/bank/bank_details.dart';
-import 'package:e_wallet/screens/cnic/cnic_screen.dart';
-import 'package:e_wallet/screens/mobile/mobile_account.dart';
+import 'package:e_wallet/screens/mobile/prepaid_load2.dart';
 import 'package:e_wallet/utils/my_icons.dart';
 import 'package:e_wallet/utils/widget_properties.dart';
 import 'package:e_wallet/widgets/app_route.dart';
@@ -11,14 +10,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class BankSlectionScreen extends StatelessWidget {
+
+class PrepaidBillsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       backgroundColor: Color(0xFFF7F6FB),
       appBar: AppBar(
-        title: appBar(context, "Bank Select"),
+        title: appBar(context, "Prepaid Load"),
         backgroundColor: Color(0xFFF7F6FB),
         elevation: 0.0,
         leading: IconButton(
@@ -37,14 +37,14 @@ class BankSlectionScreen extends StatelessWidget {
               Container(
                 height: 50,
                 margin:
-                    EdgeInsets.only(top: 50, left: 30, right: 30, bottom: 20),
+                EdgeInsets.only(top: 50, left: 30, right: 30, bottom: 20),
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(15)),
                 child: ReuseableTextfield(
-                  lable: 'Bank',
+                  lable: 'Prepaid Load',
                   enabled: false,
-                  iconPrefix: FontAwesomeIcons.building,
+                  iconPrefix: FontAwesomeIcons.mobile,
                   iconSuffix: Icons.check_circle,
                 ),
               ),
@@ -80,7 +80,7 @@ class BankSlectionScreen extends StatelessWidget {
                       children: [
                         GestureDetector(
                           onTap: () {
-                            RouteApp.instance.pushPage(context, BankDetailsScreen());
+                            RouteApp.instance.pushPage(context, PrepaidLoadTransaction());
                           },
                           child: Container(
                             margin: EdgeInsets.only(bottom: 20, right: 30),
@@ -88,7 +88,7 @@ class BankSlectionScreen extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
                                 Icon(
-                                  FontAwesomeIcons.building,
+                                  FontAwesomeIcons.paypal,
                                   size: 25,
                                   color: Colors.grey,
                                 ),
@@ -96,7 +96,7 @@ class BankSlectionScreen extends StatelessWidget {
                                   width: 20,
                                 ),
                                 Text(
-                                  'National Bank Of Canada',
+                                  'Jazz',
                                   style: TextStyle(
                                       fontSize: 15, fontFamily: 'Metropolis'),
                                 ),
@@ -107,7 +107,7 @@ class BankSlectionScreen extends StatelessWidget {
                         DividerScreen(),
                         GestureDetector(
                           onTap: () {
-                            RouteApp.instance.pushPage(context, BankDetailsScreen());
+                            RouteApp.instance.pushPage(context, PrepaidLoadTransaction());
                           },
                           child: Container(
                             margin: EdgeInsets.only(bottom: 20, top: 20),
@@ -115,14 +115,14 @@ class BankSlectionScreen extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
                                 Icon(
-                                  FontAwesomeIcons.building,
+                                  FontAwesomeIcons.paypal,
                                   color: Colors.grey,
                                 ),
                                 SizedBox(
                                   width: 20,
                                 ),
                                 Text(
-                                  'National Bank Of Canada',
+                                  'Ufone',
                                   style: TextStyle(
                                       fontSize: 15, fontFamily: 'Metropolis'),
                                 ),
@@ -133,7 +133,7 @@ class BankSlectionScreen extends StatelessWidget {
                         DividerScreen(),
                         GestureDetector(
                           onTap: () {
-                            RouteApp.instance.pushPage(context, BankDetailsScreen());
+                            RouteApp.instance.pushPage(context, PrepaidLoadTransaction());
                           },
                           child: Container(
                             margin: EdgeInsets.only(bottom: 20,  top: 20),
@@ -141,14 +141,14 @@ class BankSlectionScreen extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
                                 Icon(
-                                  FontAwesomeIcons.building,
+                                  FontAwesomeIcons.paypal,
                                   color: Colors.grey,
                                 ),
                                 SizedBox(
                                   width: 20,
                                 ),
                                 Text(
-                                  'National Bank Of Canada',
+                                  'Telenor',
                                   style: TextStyle(
                                       fontSize: 15, fontFamily: 'Metropolis'),
                                 ),
@@ -159,7 +159,7 @@ class BankSlectionScreen extends StatelessWidget {
                         DividerScreen(),
                         GestureDetector(
                           onTap: () {
-                            RouteApp.instance.pushPage(context, BankDetailsScreen());
+                            RouteApp.instance.pushPage(context, PrepaidLoadTransaction());
                           },
                           child: Container(
                             margin: EdgeInsets.only(bottom: 20, top: 20),
@@ -167,14 +167,14 @@ class BankSlectionScreen extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
                                 Icon(
-                                  FontAwesomeIcons.building,
+                                  FontAwesomeIcons.paypal,
                                   color: Colors.grey,
                                 ),
                                 SizedBox(
                                   width: 20,
                                 ),
                                 Text(
-                                  'National Bank Of Canada',
+                                  'Zong',
                                   style: TextStyle(
                                       fontSize: 15, fontFamily: 'Metropolis'),
                                 ),

@@ -8,14 +8,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class BankDetailsScreen extends StatelessWidget {
+class PrepaidLoadTransaction extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       backgroundColor: Color(0xFFF7F6FB),
       appBar: AppBar(
-        title: appBar(context, "Bank Details"),
+        title: appBar(context, "Prepaid Details"),
         backgroundColor: Color(0xFFF7F6FB),
         elevation: 0.0,
         leading: IconButton(
@@ -34,14 +34,14 @@ class BankDetailsScreen extends StatelessWidget {
               Container(
                 height: 50,
                 margin:
-                    EdgeInsets.only(top: 50, left: 30, right: 30, bottom: 20),
+                EdgeInsets.only(top: 50, left: 30, right: 30, bottom: 20),
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(15)),
                 child: ReuseableTextfield(
-                  lable: 'Bank',
+                  lable: 'Prepaid Load',
                   enabled: false,
-                  iconPrefix: FontAwesomeIcons.building,
+                  iconPrefix: FontAwesomeIcons.mobileAlt,
                   iconSuffix: Icons.check_circle,
                 ),
               ),
@@ -52,9 +52,9 @@ class BankDetailsScreen extends StatelessWidget {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(15)),
                 child: ReuseableTextfield(
-                  lable: 'Bank Of Canada',
+                  lable: 'Paypal',
                   enabled: false,
-                  iconPrefix: FontAwesomeIcons.building,
+                  iconPrefix: FontAwesomeIcons.paypal,
                   iconSuffix: Icons.check_circle,
                 ),
               ),
@@ -72,24 +72,7 @@ class BankDetailsScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              Container(
-                  height: 50,
-                  margin: EdgeInsets.only(top: 10, left: 30, right: 30),
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(15)),
-                  child: TextField(
-                    decoration: InputDecoration(
-                        hintText: 'Enter Reciever Bank account Number',
-                        hintStyle: TextStyle(
-                            fontSize: 13,
-                            fontFamily: 'Metropolis',
-                            fontWeight: FontWeight.w400),
-                        border: OutlineInputBorder(
-                            borderSide: BorderSide(
-                                color: Color(0xFFC0C0C0), width: 32.0),
-                            borderRadius: BorderRadius.circular(12.0))),
-                  )),
+
               Container(
                   height: 50,
                   margin: EdgeInsets.only(top: 10, left: 30, right: 30),
@@ -109,25 +92,7 @@ class BankDetailsScreen extends StatelessWidget {
                                 color: Color(0xFFC0C0C0), width: 32.0),
                             borderRadius: BorderRadius.circular(12.0))),
                   )),
-              Container(
-                  height: 50,
-                  margin: EdgeInsets.only(top: 10, left: 30, right: 30),
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(15)),
-                  child: TextField(
-                    decoration: InputDecoration(
-                        suffixIcon: Icon(Icons.search),
-                        hintText: 'Enter purpose of payment',
-                        hintStyle: TextStyle(
-                            fontSize: 13,
-                            fontFamily: 'Metropolis',
-                            fontWeight: FontWeight.w400),
-                        border: OutlineInputBorder(
-                            borderSide: BorderSide(
-                                color: Color(0xFFC0C0C0), width: 32.0),
-                            borderRadius: BorderRadius.circular(12.0))),
-                  )),
+
               Container(
                   height: 50,
                   margin: EdgeInsets.only(top: 10, left: 30, right: 30),
@@ -147,7 +112,7 @@ class BankDetailsScreen extends StatelessWidget {
                             borderRadius: BorderRadius.circular(12.0))),
                   )),
               SizedBox(
-                height: 130,
+                height: 240,
               ),
               GestureDetector(
                 onTap: () {

@@ -56,11 +56,13 @@ class _InviteFriendState extends State<InviteFriend> {
                       lable2: ' elitr, sed diam nonumy eirmod ',
                     ),
                   ),
+                  SizedBox(height: 20,),
 
                   GestureDetector(
                     onTap: () {},
                     child: Container(
                       width: 180,
+
                       child: Column(
                         children: [
                           redButton(context, "Send Invites"),
@@ -99,10 +101,7 @@ class _InviteFriendState extends State<InviteFriend> {
                           color: Colors.grey,
                         ),
                       ],
-                    ),
-                  ),
-                  SizedBox(
-                    height: 10,
+                    ),  
                   ),
                   Text(
                     'Copy Link Here',

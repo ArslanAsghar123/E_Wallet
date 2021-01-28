@@ -39,7 +39,7 @@ class TransferMoneyScreen extends StatelessWidget {
               Container(
                 height: 50,
                 margin:
-                    EdgeInsets.only(top: 50, left: 30, right: 30, bottom: 30),
+                EdgeInsets.only(top: 50, left: 30, right: 30, bottom: 30),
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(15)),

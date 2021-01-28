@@ -136,7 +136,7 @@ class ConfirmTransactionScreen extends StatelessWidget {
                             height: 47,
                             child: TextField(decoration: InputDecoration(
 
-                                hintText: 'USD 100.0',
+                                hintText: 'Enter Pin',
                                 hintStyle: TextStyle(
                                     fontSize: 15,
                                     fontFamily: 'Metropolis',
