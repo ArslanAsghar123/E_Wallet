@@ -5,8 +5,8 @@ import 'package:e_wallet/screens/authentication/verification.dart';
 import 'package:e_wallet/utils/my_icons.dart';
 import 'package:e_wallet/utils/my_images.dart';
 import 'package:e_wallet/widgets/appbar.dart';
-import 'package:e_wallet/widgets/reuseableTexts.dart';
-import 'package:e_wallet/widgets/single_field_container.dart';
+import 'file:///E:/E-Wallet/e_wallet/lib/widgets/reuseable_widgets/reuseableTexts.dart';
+import 'file:///E:/E-Wallet/e_wallet/lib/widgets/reuseable_widgets/single_field_container.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 

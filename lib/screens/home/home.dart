@@ -34,9 +34,7 @@ class _HomeState extends State<Home> {
               iconData: Icons.home,
               title: "Home",
               onclick: () {
-                final FancyBottomNavigationState fState =
-                    bottomNavigationKey.currentState;
-                fState.setPage(2);
+                
               }),
           TabData(
             iconData: FontAwesomeIcons.solidBell,
@@ -67,7 +65,7 @@ class _HomeState extends State<Home> {
           ],
         );
       case 1:
-        return PrepaidBillsScreen();
+        return NotificationScreen();
       case 2:
         return HelpScreen();
       case 3:

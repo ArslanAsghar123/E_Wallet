@@ -71,7 +71,9 @@ class _CardMoneyState extends State<CardMoney> {
                       children: [
                         FlatButton(
                             color: Colors.blueAccent,
-                            onPressed: () {},
+                            onPressed: () {
+
+                            },
                             child: Text(
                               'USD 20',
                               style:

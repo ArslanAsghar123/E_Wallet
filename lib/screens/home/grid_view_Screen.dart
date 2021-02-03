@@ -1,5 +1,6 @@
 import 'package:e_wallet/screens/drawer_screens/add_money.dart';
 import 'package:e_wallet/screens/drawer_screens/transaction.dart';
+import 'package:e_wallet/screens/online_shopping/grocery_and_products.dart';
 import 'package:e_wallet/screens/pay/insurance_fund.dart';
 import 'package:e_wallet/screens/pay/pay_taxes/pay_tax.dart';
 import 'package:e_wallet/utils/my_icons.dart';
@@ -51,33 +52,36 @@ class GridViewClassScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              Column(
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      CircleAvatar(
-                        radius: 18,
-                        backgroundColor: Color(0xffD9DCF2),
-                          child: Image(height: 20,image: AssetImage('assets/images/cart.png'))
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        "Online Shopping",
-                        style: TextStyle(
-                            fontFamily: 'Metropolis',
-                            fontSize: 12,
-                            letterSpacing: -0.5,
-                            fontWeight: FontWeight.w500),
-                      ),
-                      SizedBox(
-                        width: 20,
-                      )
-                    ],
-                  ),
-                ],
+              GestureDetector(
+                onTap: (){RouteApp.instance.pushPage(context, ShoppingHomeScreen());},
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        CircleAvatar(
+                          radius: 18,
+                          backgroundColor: Color(0xffD9DCF2),
+                            child: Image(height: 20,image: AssetImage('assets/images/cart.png'))
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          "Online Shopping",
+                          style: TextStyle(
+                              fontFamily: 'Metropolis',
+                              fontSize: 12,
+                              letterSpacing: -0.5,
+                              fontWeight: FontWeight.w500),
+                        ),
+                        SizedBox(
+                          width: 20,
+                        )
+                      ],
+                    ),
+                  ],
+                ),
               )
             ],
           ),

@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.cyberisol.e_wallet">
    <application
-        android:label="e_wallet"
+        android:label="E Wallet"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

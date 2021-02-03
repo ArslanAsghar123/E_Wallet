@@ -8,6 +8,7 @@ import 'package:e_wallet/utils/widget_properties.dart';
 import 'package:e_wallet/widgets/app_route.dart';
 import 'package:e_wallet/widgets/app_route_replacement.dart';
 import 'package:e_wallet/widgets/main_screen/divider_draw_screen.dart';
+import 'package:e_wallet/widgets/reuseable_widgets/resueable_offer_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -185,7 +186,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                       color: Color(0xff78A6CA),
                                       borderRadius: BorderRadius.circular(20)),
                                   child: IconButton(
-                                    onPressed: () {RouteApp.instance.pushPage(context, TransferMoneyScreen());},
+                                    onPressed: () {
+                                      RouteApp.instance.pushPage(
+                                          context, TransferMoneyScreen());
+                                    },
                                     icon: Icon(
                                       Icons.monetization_on,
                                       color: Colors.white,
@@ -220,7 +224,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                       color: Color(0xffFAD26F),
                                       borderRadius: BorderRadius.circular(20)),
                                   child: IconButton(
-                                    onPressed: () {RouteApp.instance.pushPage(context, MobileTopUpScreen());},
+                                    onPressed: () {
+                                      RouteApp.instance.pushPage(
+                                          context, MobileTopUpScreen());
+                                    },
                                     icon: Icon(
                                       Icons.mobile_screen_share_sharp,
                                       color: Colors.grey,
@@ -255,7 +262,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                       color: Color(0xff74BFFD),
                                       borderRadius: BorderRadius.circular(20)),
                                   child: IconButton(
-                                    onPressed: () {RouteApp.instance.pushPage(context, BankMoney());},
+                                    onPressed: () {
+                                      RouteApp.instance
+                                          .pushPage(context, BankMoney());
+                                    },
                                     icon: Icon(
                                       Icons.credit_card_rounded,
                                       color: Colors.white,
@@ -290,7 +300,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                       color: Color(0xffBB7DFA),
                                       borderRadius: BorderRadius.circular(20)),
                                   child: IconButton(
-                                    onPressed: () {RouteApp.instance.pushPage(context, InviteFriend());},
+                                    onPressed: () {
+                                      RouteApp.instance
+                                          .pushPage(context, InviteFriend());
+                                    },
                                     icon: Icon(
                                       Icons.perm_phone_msg_outlined,
                                       color: Colors.white,
@@ -345,7 +358,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     ],
                   ),
                 ),
-                SizedBox(height: 20,),
+                SizedBox(
+                  height: 20,
+                ),
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Row(
@@ -356,47 +371,19 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       SpecialOfferCard(
                         image: "assets/images/offer.png",
-                        press: (){},
-
+                        press: () {},
                       )
-
                     ],
                   ),
                 ),
-                SizedBox(height: 40,)
+                SizedBox(
+                  height: 40,
+                )
               ],
             ),
           ),
         ),
       ],
-    );
-  }
-}
-
-class SpecialOfferCard extends StatelessWidget {
-  const SpecialOfferCard({
-    this.image,
-    @required this.press,
-  });
-
-  final String image;
-
-  final GestureTapCallback press;
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.only(left: 20),
-      child: GestureDetector(
-        onTap: press,
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(20),
-          child: Image.asset(
-            image,
-            fit: BoxFit.cover,
-          ),
-        ),
-      ),
     );
   }
 }

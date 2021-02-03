@@ -8,7 +8,7 @@ import 'package:e_wallet/widgets/app_route.dart';
 import 'package:e_wallet/widgets/appbar.dart';
 import 'package:e_wallet/widgets/button.dart';
 import 'package:e_wallet/widgets/main_screen/divider_draw_screen.dart';
-import 'package:e_wallet/widgets/reuseable_textfield.dart';
+import 'file:///E:/E-Wallet/e_wallet/lib/widgets/reuseable_widgets/reuseable_textfield.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
