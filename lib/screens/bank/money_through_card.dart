@@ -78,23 +78,35 @@ class _CardMoneyState extends State<CardMoney> {
                               'USD 20',
                               style:
                                   TextStyle(color: Colors.white, fontSize: 10),
-                            )),
+                            ),shape: RoundedRectangleBorder(side: BorderSide(
+                            color: Colors.red,
+                            width: 1,
+                            style: BorderStyle.solid
+                        ),borderRadius: BorderRadius.circular(15.0))),
                         FlatButton(
                             color: Colors.blueAccent,
                             onPressed: () {},
                             child: Text(
-                              'USD 20',
+                              'USD 50',
                               style:
                                   TextStyle(color: Colors.white, fontSize: 10),
-                            )),
+                            ),shape: RoundedRectangleBorder(side: BorderSide(
+                            color: Colors.red,
+                            width: 1,
+                            style: BorderStyle.solid
+                        ),borderRadius: BorderRadius.circular(15.0))),
                         FlatButton(
                             color: Colors.blueAccent,
                             onPressed: () {},
                             child: Text(
-                              'USD 20',
+                              'USD 100',
                               style:
                                   TextStyle(color: Colors.white, fontSize: 10),
-                            )),
+                            ),shape: RoundedRectangleBorder(side: BorderSide(
+                            color: Colors.red,
+                            width: 1,
+                            style: BorderStyle.solid
+                        ),borderRadius: BorderRadius.circular(15.0))),
                       ],
                     ),
                     Row(
@@ -104,26 +116,39 @@ class _CardMoneyState extends State<CardMoney> {
                             color: Colors.blueAccent,
                             onPressed: () {},
                             child: Text(
-                              'USD 20',
+                              'USD 150',
                               style:
                                   TextStyle(color: Colors.white, fontSize: 10),
-                            )),
+                            ),shape: RoundedRectangleBorder(side: BorderSide(
+                            color: Colors.red,
+                            width: 1,
+                            style: BorderStyle.solid
+                        ),borderRadius: BorderRadius.circular(15.0))),
                         FlatButton(
                             color: Colors.blueAccent,
                             onPressed: () {},
                             child: Text(
-                              'USD 20',
+                              'USD 200',
                               style:
                                   TextStyle(color: Colors.white, fontSize: 10),
-                            )),
+                            ),shape: RoundedRectangleBorder(side: BorderSide(
+                            color: Colors.red,
+                            width: 1,
+                            style: BorderStyle.solid
+                        ),borderRadius: BorderRadius.circular(15.0))),
                         FlatButton(
                             color: Colors.blueAccent,
                             onPressed: () {},
                             child: Text(
-                              'USD 20',
+                              'USD 250',
                               style:
                                   TextStyle(color: Colors.white, fontSize: 10),
-                            )),
+                            ),
+                            shape: RoundedRectangleBorder(side: BorderSide(
+                                color: Colors.red,
+                                width: 1,
+                                style: BorderStyle.solid
+                            ),borderRadius: BorderRadius.circular(15.0))),
                       ],
                     )
                   ],

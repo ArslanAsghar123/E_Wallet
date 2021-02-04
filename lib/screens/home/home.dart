@@ -34,7 +34,7 @@ class _HomeState extends State<Home> {
               iconData: Icons.home,
               title: "Home",
               onclick: () {
-                
+
               }),
           TabData(
             iconData: FontAwesomeIcons.solidBell,

@@ -40,7 +40,7 @@ class GridDashboard extends StatelessWidget {
   Widget build(BuildContext context) {
     List<Items> myList = [item1, item2, item3, item4, item5, item6];
     var color = 0xffFFFFFF;
-    return Flexible(
+    return Expanded(
       child: GridView.count(
           childAspectRatio: 1.0,
           crossAxisCount: 2,
@@ -52,6 +52,7 @@ class GridDashboard extends StatelessWidget {
                 RouteApp.instance.pushPage(context, Vegitables());
               },
               child: Container(
+
                 decoration: BoxDecoration(
                     color: Color(color),
                     borderRadius: BorderRadius.circular(10),

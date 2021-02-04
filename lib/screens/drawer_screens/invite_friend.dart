@@ -43,37 +43,39 @@ class _InviteFriendState extends State<InviteFriend> {
               color: Color(0xFFF7F6FB),
               child: Column(
                 children: <Widget>[
-                  Expanded(
+                  Flexible(
                       child: Container(
                     child: Image(
                       image: AssetImage('assets/images/invite_friend.png'),
                     ),
                   )),
-                  Expanded(
-                    child: ReuseableText(
-                      boldLable: 'Login',
-                      lable1: 'Lorem ipsum dolor sit amet, consetetur',
-                      lable2: ' elitr, sed diam nonumy eirmod ',
-                    ),
+                  ReuseableText(
+                    boldLable: 'Login',
+                    lable1: 'Lorem ipsum dolor sit amet, consetetur',
+                    lable2: ' elitr, sed diam nonumy eirmod ',
                   ),
-                  SizedBox(height: 20,),
 
-                  GestureDetector(
-                    onTap: () {},
-                    child: Container(
-                      width: 180,
+                  SizedBox(height: 10,),
+                  Center(
+                    child: Flexible(
+                      child: GestureDetector(
+                        onTap: () {},
+                        child: Container(
+                          width: 180,
 
-                      child: Column(
-                        children: [
-                          redButton(context, "Send Invites"),
-                          //Icon(Icons.arrow_circle_down_outlined)
-                        ],
+                          child: Column(
+                            children: [
+                              redButton(context, "Send Invites"),
+                              //Icon(Icons.arrow_circle_down_outlined)
+                            ],
+                          ),
+                        ),
                       ),
                     ),
                   ),
 
-
-                  Expanded(
+                  SizedBox(height: 10,),
+                  Flexible(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -101,7 +103,7 @@ class _InviteFriendState extends State<InviteFriend> {
                           color: Colors.grey,
                         ),
                       ],
-                    ),  
+                    ),
                   ),
                   Text(
                     'Copy Link Here',
